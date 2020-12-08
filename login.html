@@ -1,0 +1,68 @@
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Google Material Design Icons CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./res/css/login.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <style>
+        .flexbox {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="login-page">
+        <div class="flexbox" style="
+        margin-left: 38px;
+        margin-bottom: 20px;; ">
+            <i style="font-size: 40px;" class="large material-icons">emoji_objects</i>
+            <h1 style="margin-left: 8px; text-align: center;">Incubadora</h1>
+        </div>
+        <div class="form">
+            <p class="message" style="display: none; color: red;" id="warningMessageLogin">*</p>
+            <form method="POST" action="./server/actions/validateRegister.php" class="register-form">
+                <input id="registerUser" type="text" placeholder="name" />
+                <input id="registerPass" type="password" placeholder="password" />
+                <input id="confirmPass" type="password" placeholder="corfirm password" />
+                <input id="email" type="text" placeholder="email address" />
+                <button id="createAccButton">create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form" method="POST" action="./server/actions/validateLogin.php">
+
+                <input id="userName" type="text" name="userName" placeholder="username" />
+                <input id="password" type="password" name="password" placeholder="password" />
+                <button id="loginButton">login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+
+        $('.message a').click(function () {
+            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+    </script>
+
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
