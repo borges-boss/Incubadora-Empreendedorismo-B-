@@ -26,6 +26,35 @@ class User
     }
   }
 
+  function updateUser($name, $email, $password,$id)
+  {
+    $connection = new Connection();
+    $con = $connection->getConnetion();
+
+    if($password!=""){
+      $sql ="UPDATE user SET name=?, email=?, password=? WHERE id=?";
+      $stm = $con->prepare($sql);
+      $stm->bind_param("sssi", $name, $email, $password, $id);
+    }
+    else{
+      $sql="UPDATE user SET name=?,email=? WHERE id=?";
+      $stm = $con->prepare($sql);
+      $stm->bind_param("ssi", $name, $email,$id);
+    }
+   
+   
+    $stm->execute();
+    $stm->close();
+
+    $res = $this->getUsers(" WHERE name='$name' AND email='$email'");
+
+    if ($res->num_rows == 1) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+
   function getUsers($filter)
   {
     $database = new Connection();

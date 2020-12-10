@@ -16,6 +16,15 @@ class Like
         return $result = $con->query($sql);
     }
 
+    public function getNumberOfLikes($project_id){
+        $database = new Connection();
+        $con = $database->getConnetion();
+        $sql = "SELECT COUNT(FK_projeto_id) AS num_likes FROM likes WHERE FK_projeto_id=$project_id" ;
+        $num=0;
+        
+        return $con->query($sql)->fetch_assoc()['num_likes'];
+    }
+
     public function registerLike($project_id, $user_id)
     {
 
