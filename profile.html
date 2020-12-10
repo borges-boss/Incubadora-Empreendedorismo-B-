@@ -1,0 +1,1414 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS CDN -->
+    <style type="text/css">
+        svg:not(:root).svg-inline--fa {
+            overflow: visible
+        }
+
+        .svg-inline--fa {
+            display: inline-block;
+            font-size: inherit;
+            height: 1em;
+            overflow: visible;
+            vertical-align: -.125em
+        }
+
+        .svg-inline--fa.fa-lg {
+            vertical-align: -.225em
+        }
+
+        .svg-inline--fa.fa-w-1 {
+            width: .0625em
+        }
+
+        .svg-inline--fa.fa-w-2 {
+            width: .125em
+        }
+
+        .svg-inline--fa.fa-w-3 {
+            width: .1875em
+        }
+
+        .svg-inline--fa.fa-w-4 {
+            width: .25em
+        }
+
+        .svg-inline--fa.fa-w-5 {
+            width: .3125em
+        }
+
+        .svg-inline--fa.fa-w-6 {
+            width: .375em
+        }
+
+        .svg-inline--fa.fa-w-7 {
+            width: .4375em
+        }
+
+        .svg-inline--fa.fa-w-8 {
+            width: .5em
+        }
+
+        .svg-inline--fa.fa-w-9 {
+            width: .5625em
+        }
+
+        .svg-inline--fa.fa-w-10 {
+            width: .625em
+        }
+
+        .svg-inline--fa.fa-w-11 {
+            width: .6875em
+        }
+
+        .svg-inline--fa.fa-w-12 {
+            width: .75em
+        }
+
+        .svg-inline--fa.fa-w-13 {
+            width: .8125em
+        }
+
+        .svg-inline--fa.fa-w-14 {
+            width: .875em
+        }
+
+        .svg-inline--fa.fa-w-15 {
+            width: .9375em
+        }
+
+        .svg-inline--fa.fa-w-16 {
+            width: 1em
+        }
+
+        .svg-inline--fa.fa-w-17 {
+            width: 1.0625em
+        }
+
+        .svg-inline--fa.fa-w-18 {
+            width: 1.125em
+        }
+
+        .svg-inline--fa.fa-w-19 {
+            width: 1.1875em
+        }
+
+        .svg-inline--fa.fa-w-20 {
+            width: 1.25em
+        }
+
+        .svg-inline--fa.fa-pull-left {
+            margin-right: .3em;
+            width: auto
+        }
+
+        .svg-inline--fa.fa-pull-right {
+            margin-left: .3em;
+            width: auto
+        }
+
+        .svg-inline--fa.fa-border {
+            height: 1.5em
+        }
+
+        .svg-inline--fa.fa-li {
+            width: 2em
+        }
+
+        .svg-inline--fa.fa-fw {
+            width: 1.25em
+        }
+
+        .fa-layers svg.svg-inline--fa {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .fa-layers {
+            display: inline-block;
+            height: 1em;
+            position: relative;
+            text-align: center;
+            vertical-align: -.125em;
+            width: 1em
+        }
+
+        .fa-layers svg.svg-inline--fa {
+            -webkit-transform-origin: center center;
+            transform-origin: center center
+        }
+
+        .fa-layers-counter,
+        .fa-layers-text {
+            display: inline-block;
+            position: absolute;
+            text-align: center
+        }
+
+        .fa-layers-text {
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transform-origin: center center;
+            transform-origin: center center
+        }
+
+        .fa-layers-counter {
+            background-color: #ff253a;
+            border-radius: 1em;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #fff;
+            height: 1.5em;
+            line-height: 1;
+            max-width: 5em;
+            min-width: 1.5em;
+            overflow: hidden;
+            padding: .25em;
+            right: 0;
+            text-overflow: ellipsis;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right
+        }
+
+        .fa-layers-bottom-right {
+            bottom: 0;
+            right: 0;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right
+        }
+
+        .fa-layers-bottom-left {
+            bottom: 0;
+            left: 0;
+            right: auto;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom left;
+            transform-origin: bottom left
+        }
+
+        .fa-layers-top-right {
+            right: 0;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right
+        }
+
+        .fa-layers-top-left {
+            left: 0;
+            right: auto;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top left;
+            transform-origin: top left
+        }
+
+        .fa-lg {
+            font-size: 1.33333em;
+            line-height: .75em;
+            vertical-align: -.0667em
+        }
+
+        .fa-xs {
+            font-size: .75em
+        }
+
+        .fa-sm {
+            font-size: .875em
+        }
+
+        .fa-1x {
+            font-size: 1em
+        }
+
+        .fa-2x {
+            font-size: 2em
+        }
+
+        .fa-3x {
+            font-size: 3em
+        }
+
+        .fa-4x {
+            font-size: 4em
+        }
+
+        .fa-5x {
+            font-size: 5em
+        }
+
+        .fa-6x {
+            font-size: 6em
+        }
+
+        .fa-7x {
+            font-size: 7em
+        }
+
+        .fa-8x {
+            font-size: 8em
+        }
+
+        .fa-9x {
+            font-size: 9em
+        }
+
+        .fa-10x {
+            font-size: 10em
+        }
+
+        .fa-fw {
+            text-align: center;
+            width: 1.25em
+        }
+
+        .fa-ul {
+            list-style-type: none;
+            margin-left: 2.5em;
+            padding-left: 0
+        }
+
+        .fa-ul>li {
+            position: relative
+        }
+
+        .fa-li {
+            left: -2em;
+            position: absolute;
+            text-align: center;
+            width: 2em;
+            line-height: inherit
+        }
+
+        .fa-border {
+            border: solid .08em #eee;
+            border-radius: .1em;
+            padding: .2em .25em .15em
+        }
+
+        .fa-pull-left {
+            float: left
+        }
+
+        .fa-pull-right {
+            float: right
+        }
+
+        .fa.fa-pull-left,
+        .fab.fa-pull-left,
+        .fal.fa-pull-left,
+        .far.fa-pull-left,
+        .fas.fa-pull-left {
+            margin-right: .3em
+        }
+
+        .fa.fa-pull-right,
+        .fab.fa-pull-right,
+        .fal.fa-pull-right,
+        .far.fa-pull-right,
+        .fas.fa-pull-right {
+            margin-left: .3em
+        }
+
+        .fa-spin {
+            -webkit-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear
+        }
+
+        .fa-pulse {
+            -webkit-animation: fa-spin 1s infinite steps(8);
+            animation: fa-spin 1s infinite steps(8)
+        }
+
+        @-webkit-keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        .fa-rotate-90 {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+
+        .fa-rotate-180 {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg)
+        }
+
+        .fa-rotate-270 {
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg)
+        }
+
+        .fa-flip-horizontal {
+            -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1)
+        }
+
+        .fa-flip-vertical {
+            -webkit-transform: scale(1, -1);
+            transform: scale(1, -1)
+        }
+
+        .fa-flip-horizontal.fa-flip-vertical {
+            -webkit-transform: scale(-1, -1);
+            transform: scale(-1, -1)
+        }
+
+        :root .fa-flip-horizontal,
+        :root .fa-flip-vertical,
+        :root .fa-rotate-180,
+        :root .fa-rotate-270,
+        :root .fa-rotate-90 {
+            -webkit-filter: none;
+            filter: none
+        }
+
+        .fa-stack {
+            display: inline-block;
+            height: 2em;
+            position: relative;
+            width: 2em
+        }
+
+        .fa-stack-1x,
+        .fa-stack-2x {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .svg-inline--fa.fa-stack-1x {
+            height: 1em;
+            width: 1em
+        }
+
+        .svg-inline--fa.fa-stack-2x {
+            height: 2em;
+            width: 2em
+        }
+
+        .fa-inverse {
+            color: #fff
+        }
+
+        .sr-only {
+            border: 0;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px
+        }
+
+        .sr-only-focusable:active,
+        .sr-only-focusable:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto
+        }
+    </style>
+
+
+    <style>
+        body {
+            background: #f9f9fb;
+        }
+
+        .view-account {
+            background: #FFFFFF;
+            margin-top: 20px;
+        }
+
+        .view-account .pro-label {
+            font-size: 13px;
+            padding: 4px 5px;
+            position: relative;
+            top: -5px;
+            margin-left: 10px;
+            display: inline-block
+        }
+
+        .view-account .side-bar {
+            padding-bottom: 30px
+        }
+
+        .view-account .side-bar .user-info {
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 30px;
+            color: #616670;
+            border-bottom: 1px solid #f3f3f3
+        }
+
+        .view-account .side-bar .user-info .img-profile {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 15px
+        }
+
+        .view-account .side-bar .user-info .meta li {
+            margin-bottom: 10px
+        }
+
+        .view-account .side-bar .user-info .meta li span {
+            display: inline-block;
+            width: 100px;
+            margin-right: 5px;
+            text-align: right
+        }
+
+        .view-account .side-bar .user-info .meta li a {
+            color: #616670
+        }
+
+        .view-account .side-bar .user-info .meta li.activity {
+            color: #a2a6af
+        }
+
+        .view-account .side-bar .side-menu {
+            text-align: center
+        }
+
+        .view-account .side-bar .side-menu .nav {
+            display: inline-block;
+            margin: 0 auto
+        }
+
+        .view-account .side-bar .side-menu .nav>li {
+            font-size: 14px;
+            margin-bottom: 0;
+            border-bottom: none;
+            display: inline-block;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px
+        }
+
+        .view-account .side-bar .side-menu .nav>li:last-child {
+            margin-right: 0
+        }
+
+        .view-account .side-bar .side-menu .nav>li>a {
+            display: inline-block;
+            color: #9499a3;
+            padding: 5px;
+            border-bottom: 2px solid transparent
+        }
+
+        .view-account .side-bar .side-menu .nav>li>a:hover {
+            color: #616670;
+            background: none
+        }
+
+        .view-account .side-bar .side-menu .nav>li.active a {
+            color: #40babd;
+            border-bottom: 2px solid #40babd;
+            background: none;
+            border-right: none
+        }
+
+        .theme-2 .view-account .side-bar .side-menu .nav>li.active a {
+            color: #6dbd63;
+            border-bottom-color: #6dbd63
+        }
+
+        .theme-3 .view-account .side-bar .side-menu .nav>li.active a {
+            color: #497cb1;
+            border-bottom-color: #497cb1
+        }
+
+        .theme-4 .view-account .side-bar .side-menu .nav>li.active a {
+            color: #ec6952;
+            border-bottom-color: #ec6952
+        }
+
+        .view-account .side-bar .side-menu .nav>li .icon {
+            display: block;
+            font-size: 24px;
+            margin-bottom: 5px
+        }
+
+        .view-account .content-panel {
+            padding: 30px
+        }
+
+        .view-account .content-panel .title {
+            margin-bottom: 15px;
+            margin-top: 0;
+            font-size: 18px
+        }
+
+        .view-account .content-panel .fieldset-title {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eaeaf1;
+            margin-bottom: 30px;
+            color: #616670;
+            font-size: 16px
+        }
+
+        .view-account .content-panel .avatar .figure img {
+            float: right;
+            width: 64px
+        }
+
+        .view-account .content-panel .content-header-wrapper {
+            position: relative;
+            margin-bottom: 30px
+        }
+
+        .view-account .content-panel .content-header-wrapper .actions {
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .view-account .content-panel .content-utilities {
+            position: relative;
+            margin-bottom: 30px
+        }
+
+        .view-account .content-panel .content-utilities .btn-group {
+            margin-right: 5px;
+            margin-bottom: 15px
+        }
+
+        .view-account .content-panel .content-utilities .fa {
+            font-size: 16px;
+            margin-right: 0
+        }
+
+        .view-account .content-panel .content-utilities .page-nav {
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .view-account .content-panel .content-utilities .page-nav .btn-group {
+            margin-bottom: 0
+        }
+
+        .view-account .content-panel .content-utilities .page-nav .indicator {
+            color: #a2a6af;
+            margin-right: 5px;
+            display: inline-block
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item {
+            position: relative;
+            padding: 10px;
+            border-bottom: 1px solid #f3f3f3;
+            color: #616670;
+            overflow: hidden
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item>div {
+            float: left
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .icheck {
+            background-color: #fff
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item:hover {
+            background: #f9f9fb
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item:nth-child(even) {
+            background: #fcfcfd
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item:nth-child(even):hover {
+            background: #f9f9fb
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item a {
+            color: #616670
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item a:hover {
+            color: #494d55;
+            text-decoration: none
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .checkbox-container,
+        .view-account .content-panel .mails-wrapper .mail-item .star-container {
+            display: inline-block;
+            margin-right: 5px
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .star-container .fa {
+            color: #a2a6af;
+            font-size: 16px;
+            vertical-align: middle
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .star-container .fa.fa-star {
+            color: #f2b542
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .star-container .fa:hover {
+            color: #868c97
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .mail-to {
+            display: inline-block;
+            margin-right: 5px;
+            min-width: 120px
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .mail-subject {
+            display: inline-block;
+            margin-right: 5px
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .mail-subject .label {
+            margin-right: 5px
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .mail-subject .label:last-child {
+            margin-right: 10px
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .mail-subject .label a,
+        .view-account .content-panel .mails-wrapper .mail-item .mail-subject .label a:hover {
+            color: #fff
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .mail-subject .label-color-1 {
+            background: #f77b6b
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .mail-subject .label-color-2 {
+            background: #58bbee
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .mail-subject .label-color-3 {
+            background: #f8a13f
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .mail-subject .label-color-4 {
+            background: #ea5395
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .mail-subject .label-color-5 {
+            background: #8a40a7
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .time-container {
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: #a2a6af;
+            text-align: left
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .time-container .attachment-container {
+            display: inline-block;
+            color: #a2a6af;
+            margin-right: 5px
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .time-container .time {
+            display: inline-block;
+            text-align: right
+        }
+
+        .view-account .content-panel .mails-wrapper .mail-item .time-container .time.today {
+            font-weight: 700;
+            color: #494d55
+        }
+
+        .drive-wrapper {
+            padding: 15px;
+            background: #f5f5f5;
+            overflow: hidden
+        }
+
+        .drive-wrapper .drive-item {
+            width: 130px;
+            margin-right: 15px;
+            display: inline-block;
+            float: left
+        }
+
+        .drive-wrapper .drive-item:hover {
+            box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+            z-index: 1
+        }
+
+        .drive-wrapper .drive-item-inner {
+            padding: 15px
+        }
+
+        .drive-wrapper .drive-item-title {
+            margin-bottom: 15px;
+            max-width: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+
+        .drive-wrapper .drive-item-title a {
+            color: #494d55
+        }
+
+        .drive-wrapper .drive-item-title a:hover {
+            color: #40babd
+        }
+
+        .theme-2 .drive-wrapper .drive-item-title a:hover {
+            color: #6dbd63
+        }
+
+        .theme-3 .drive-wrapper .drive-item-title a:hover {
+            color: #497cb1
+        }
+
+        .theme-4 .drive-wrapper .drive-item-title a:hover {
+            color: #ec6952
+        }
+
+        .drive-wrapper .drive-item-thumb {
+            width: 100px;
+            height: 80px;
+            margin: 0 auto;
+            color: #616670
+        }
+
+        .drive-wrapper .drive-item-thumb a {
+            -webkit-opacity: .8;
+            -moz-opacity: .8;
+            opacity: .8
+        }
+
+        .drive-wrapper .drive-item-thumb a:hover {
+            -webkit-opacity: 1;
+            -moz-opacity: 1;
+            opacity: 1
+        }
+
+        .drive-wrapper .drive-item-thumb .fa {
+            display: inline-block;
+            font-size: 36px;
+            margin: 0 auto;
+            margin-top: 20px
+        }
+
+        .drive-wrapper .drive-item-footer .utilities {
+            margin-bottom: 0
+        }
+
+        .drive-wrapper .drive-item-footer .utilities li:last-child {
+            padding-right: 0
+        }
+
+        .drive-list-view .name {
+            width: 60%
+        }
+
+        .drive-list-view .name.truncate {
+            max-width: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+
+        .drive-list-view .type {
+            width: 15px
+        }
+
+        .drive-list-view .date,
+        .drive-list-view .size {
+            max-width: 60px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+
+        .drive-list-view a {
+            color: #494d55
+        }
+
+        .drive-list-view a:hover {
+            color: #40babd
+        }
+
+        .theme-2 .drive-list-view a:hover {
+            color: #6dbd63
+        }
+
+        .theme-3 .drive-list-view a:hover {
+            color: #497cb1
+        }
+
+        .theme-4 .drive-list-view a:hover {
+            color: #ec6952
+        }
+
+        .drive-list-view td.date,
+        .drive-list-view td.size {
+            color: #a2a6af
+        }
+
+        @media (max-width:767px) {
+            .view-account .content-panel .title {
+                text-align: center
+            }
+
+            .view-account .side-bar .user-info {
+                padding: 0
+            }
+
+            .view-account .side-bar .user-info .img-profile {
+                width: 60px;
+                height: 60px
+            }
+
+            .view-account .side-bar .user-info .meta li {
+                margin-bottom: 5px
+            }
+
+            .view-account .content-panel .content-header-wrapper .actions {
+                position: static;
+                margin-bottom: 30px
+            }
+
+            .view-account .content-panel {
+                padding: 0
+            }
+
+            .view-account .content-panel .content-utilities .page-nav {
+                position: static;
+                margin-bottom: 15px
+            }
+
+            .drive-wrapper .drive-item {
+                width: 100px;
+                margin-right: 5px;
+                float: none
+            }
+
+            .drive-wrapper .drive-item-thumb {
+                width: auto;
+                height: 54px
+            }
+
+            .drive-wrapper .drive-item-thumb .fa {
+                font-size: 24px;
+                padding-top: 0
+            }
+
+            .view-account .content-panel .avatar .figure img {
+                float: none;
+                margin-bottom: 15px
+            }
+
+            .view-account .file-uploader {
+                margin-bottom: 15px
+            }
+
+            .view-account .mail-subject {
+                max-width: 100px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis
+            }
+
+            .view-account .content-panel .mails-wrapper .mail-item .time-container {
+                position: static
+            }
+
+            .view-account .content-panel .mails-wrapper .mail-item .time-container .time {
+                width: auto;
+                text-align: left
+            }
+        }
+
+        @media (min-width:768px) {
+            .view-account .side-bar .user-info {
+                padding: 0;
+                padding-bottom: 15px
+            }
+
+            .view-account .mail-subject .subject {
+                max-width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis
+            }
+        }
+
+        @media (min-width:992px) {
+            .view-account .content-panel {
+                min-height: 800px;
+                border-left: 1px solid #f3f3f7;
+                margin-left: 200px
+            }
+
+            .view-account .mail-subject .subject {
+                max-width: 280px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis
+            }
+
+            .view-account .side-bar {
+                position: absolute;
+                width: 200px;
+                min-height: 600px
+            }
+
+            .view-account .side-bar .user-info {
+                margin-bottom: 0;
+                border-bottom: none;
+                padding: 30px
+            }
+
+            .view-account .side-bar .user-info .img-profile {
+                width: 120px;
+                height: 120px
+            }
+
+            .view-account .side-bar .side-menu {
+                text-align: left
+            }
+
+            .view-account .side-bar .side-menu .nav {
+                display: block
+            }
+
+            .view-account .side-bar .side-menu .nav>li {
+                display: block;
+                float: none;
+                font-size: 14px;
+                border-bottom: 1px solid #f3f3f7;
+                margin-right: 0;
+                margin-bottom: 0
+            }
+
+            .view-account .side-bar .side-menu .nav>li>a {
+                display: block;
+                color: #9499a3;
+                padding: 10px 15px;
+                padding-left: 30px
+            }
+
+            .view-account .side-bar .side-menu .nav>li>a:hover {
+                background: #f9f9fb
+            }
+
+            .view-account .side-bar .side-menu .nav>li.active a {
+                background: #f9f9fb;
+                border-right: 4px solid #40babd;
+                border-bottom: none
+            }
+
+            .theme-2 .view-account .side-bar .side-menu .nav>li.active a {
+                border-right-color: #6dbd63
+            }
+
+            .theme-3 .view-account .side-bar .side-menu .nav>li.active a {
+                border-right-color: #497cb1
+            }
+
+            .theme-4 .view-account .side-bar .side-menu .nav>li.active a {
+                border-right-color: #ec6952
+            }
+
+            .view-account .side-bar .side-menu .nav>li .icon {
+                font-size: 24px;
+                vertical-align: middle;
+                text-align: center;
+                width: 40px;
+                display: inline-block
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./res/css/style3.css">
+
+    <!-- Google Material Design Icons CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav id="sidebar" class="mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" style="overflow: visible;">
+            <div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;"
+                tabindex="0">
+                <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+                    style="position:relative; top:0; left:0;" dir="ltr">
+                    <div id="dismiss">
+                        <svg class="svg-inline--fa fa-arrow-left fa-w-14" aria-hidden="true" data-prefix="fas"
+                            data-icon="arrow-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                            data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div class="sidebar-header">
+                        <h3><i class="large material-icons">emoji_objects</i><span
+                                style="padding-left: 3px;">Incubadora</span>
+                        </h3>
+                    </div>
+
+                    <ul class="list-unstyled components">
+                        <p>Menu</p>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Destaques</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li>
+                                    <a href="#">Mais Populares</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#categoriaSubmenu" data-toggle="collapse" aria-expanded="false">Categorias</a>
+                            <ul class="collapse list-unstyled" id="categoriaSubmenu">
+                                <li>
+                                    <a href="#">Item 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about.html">Sobre</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-unstyled CTAs">
+
+                    </ul>
+                </div>
+            </div>
+            <div id="mCSB_1_scrollbar_vertical"
+                class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: none;">
+                <div class="mCSB_draggerContainer">
+                    <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                        style="position: absolute; min-height: 50px; height: 0px; top: 0px; display: block; max-height: 606px;">
+                        <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                    </div>
+                    <div class="mCSB_draggerRail"></div>
+                </div>
+            </div>
+        </nav>
+
+        <nav id="navBar" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+
+            <a href="#" class="navbar-brand" id="myBrand">
+                <div class="flexbox" style="color: white;">
+                    <i class="large material-icons">emoji_objects</i>
+                    <span style="margin-left: 8px;">Incubadora</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu-start  -->
+            <ul id="menuDesktop" class="nav nav-pills">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="index.html" role="button">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">Destaques</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./destaques.html">Populares</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">Categorias</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" role="button" aria-expanded="false">Sobre</a>
+                </li>
+
+            </ul>
+
+            <!-- Searchbar  -->
+
+            <form class="form-inline my-2 my-lg-0" id="searchBar">
+                <input autocomplete="on" id="searchDam" class="form-control mr-sm-2" list="suggestions" type="search"
+                    placeholder="Search" aria-label="Search">
+
+                <datalist id="suggestions">
+                </datalist>
+
+
+            </form>
+
+            <button class="btn btn-dark" type="button" id="sidebarCollapse">
+                <i class="material-icons">menu</i>
+            </button>
+
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="medium material-icons">person</i>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                    <li id="menuMobileDropDown" class="nav-item dropdown active">
+
+                    </li>
+                </ul>
+            </div>
+
+
+            <!--Desktop-->
+            <div class="dropdown" id="navbarSupportedContentDesktop">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">person</i>
+                </button>
+
+                <div id="userMenuDesktop" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                </div>
+            </div>
+        </nav>
+
+
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <div style="margin-top:80px ;" class="container">
+            <div class="view-account">
+                <section class="module">
+                    <div class="module-inner">
+                        <div class="side-bar">
+                            <div class="user-info">
+                                <img class="img-profile img-circle img-responsive center-block"
+                                    src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="">
+                                <ul class="meta list list-unstyled">
+                                    <li id="userShow" class="name">User Name
+                                        <label class="label label-info"></label>
+                                    </li>
+                                    <li id="emailShow" class="email"><a href="#">user@gmail.com</a></li>
+                                    <li class="activity">Last logged in: Today at 2:18pm</li>
+                                </ul>
+                            </div>
+                            <nav class="side-menu">
+                                <ul class="nav">
+                                    <li class="active"><a href="#"><span class="fa fa-user"></span> Profile</a></li>
+                                    <li style="display: none;"><a href="#"><span class="fa fa-cog"></span> Settings</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="content-panel">
+                            <h2 class="title">Profile</h2>
+                            <form class="form-horizontal">
+                                <fieldset class="fieldset">
+                                    <h3 class="fieldset-title">Personal Info</h3>
+                                    <div class="form-group avatar">
+                                        <figure style="display: none;" class="figure col-md-2 col-sm-3 col-xs-12">
+                                            <img class="img-rounded img-responsive"
+                                                src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                                        </figure>
+                                        <div style="display: none;" class="form-inline col-md-10 col-sm-9 col-xs-12">
+                                            <input type="file" class="file-uploader pull-left">
+                                            <button type="submit" class="btn btn-sm btn-default-alt pull-left">Update
+                                                Image</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label">User Name</label>
+                                        <div class="col-md-10 col-sm-9 col-xs-12">
+                                            <input type="text" class="form-control" id="userName" placeholder="Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2  col-sm-3 col-xs-12 control-label">Email</label>
+                                        <div class="col-md-10 col-sm-9 col-xs-12">
+                                            <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                                <fieldset class="fieldset">
+                                    <h3 class="fieldset-title">Password</h3>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2  col-sm-3 col-xs-12 control-label">Password</label>
+                                        <div class="col-md-10 col-sm-9 col-xs-12">
+                                            <input type="password" class="form-control" id="password" placeholder="Current password">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2  col-sm-3 col-xs-12 control-label">New Password</label>
+                                        <div class="col-md-10 col-sm-9 col-xs-12">
+                                            <input type="password" class="form-control" id="confirmPassoword" placeholder="New password">
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                                <hr>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                                        <input id="submit" class="btn btn-primary" type="submit" value="Update Profile">
+                                        <span style="display: none; margin-left: 28px; color: red; font-size:12px;" id="error">*</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <div class="page-footer font-small blue pt-4">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#"> Gabriel Borges Diorato</a>
+        </div>
+        <!-- Copyright -->
+
+    </div>
+    <!-- Footer -->
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!--Desktop navbar script-->
+    <script>
+        document.getElementById("navBar").style.top = "0";
+    </script>
+
+    <!--Sidebar script-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                document.getElementById("navBar").style.top = "-60px";
+            });
+        });
+    </script>
+
+    <!--Page script-->
+    <script src="./js/profile.js"></script>
+
+</body>
+
+
+</html>

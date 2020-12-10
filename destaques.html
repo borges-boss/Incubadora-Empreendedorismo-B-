@@ -465,6 +465,9 @@
     <link rel="stylesheet" href="./res/css/style3.css">
     <link rel="stylesheet" href="./res/css/cardStyle.css">
     <link rel="stylesheet" href="./res/css/likeButton.css">
+    <link rel="stylesheet" href="./res/css/fab.css">
+    <link rel="stylesheet" href="./res/css/modalStyle.css">
+
 
 
     <!-- Google Material Design Icons CSS -->
@@ -476,9 +479,6 @@
 
     <link rel="apple-touch-icon" type="image/png"
         href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-
-    <script src="./js/script.js"></script>
-
 </head>
 
 <body>
@@ -515,13 +515,7 @@
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Destaques</a>
                             <ul class="collapse list-unstyled" id="pageSubmenu">
                                 <li>
-                                    <a href="#">Item 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Item 2</a>
-                                </li>
-                                <li>
-                                    <a href="#">Item 3</a>
+                                    <a href="./destaques.html">Populares</a>
                                 </li>
                             </ul>
                         </li>
@@ -581,11 +575,7 @@
                     <a class="nav-link dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                         aria-expanded="false">Destaques</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
+                        <a class="dropdown-item" href="./destaques.html">Populares</a>
                     </div>
                 </li>
 
@@ -632,10 +622,8 @@
 
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active" href="#">Minha conta</a>
-                        <a class="nav-link active" href="#">Configurações</a>
-                        <a class="nav-link active" href="#">Log out</a>
+                    <li id="menuMobileDropDown" class="nav-item dropdown active">
+
                     </li>
                 </ul>
             </div>
@@ -649,9 +637,6 @@
                 </button>
 
                 <div id="userMenuDesktop" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Minha Conta</a>
-                    <a class="dropdown-item" href="#">Configurações</a>
-                    <a class="dropdown-item" href="#">Log Out</a>
                 </div>
             </div>
         </nav>
@@ -660,6 +645,7 @@
     </div>
 
     <main>
+
 
         <section style="margin-top: 50px;">
             <div class="container-fluid">
@@ -670,666 +656,119 @@
                     </div>
                 </div>
 
-                <div style="margin-top: 24px;" class="row">
-                    <div class="col-md-4">
-                        <div class="postBox">
-                            <div class="post">
-                                <div class="header_post">
-                                    <img src="https://images.pexels.com/photos/2529973/pexels-photo-2529973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                        alt="">
-                                </div>
-
-                                <div class="body_post">
-                                    <div class="post_content">
-
-                                        <h1>Lorem Ipsum</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi
-                                            assumenda cumque deserunt
-                                            dolorum ex exercitationem.</p>
-                                    <div class="row">
-                                        <div class="postBox_infos">
-                                           <div class="col-6">
-                                            <div class="postedBy">
-                                                <span>author</span>
-                                                John Doe
-                                            </div>
-                                        </div>
-                                   
-                                            <div class="flexbox">
-                                                <div style="margin-bottom: 5px;">
-                                                    <input type="checkbox" class="toggleButton" id="checkbox" />
-                                                    <label for="checkbox">
-                                                        <svg id="heart-svg" viewBox="467 392 58 57"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <g id="Group" fill="none" fill-rule="evenodd"
-                                                                transform="translate(467 392)">
-                                                                <path
-                                                                    d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                                    id="heart" fill="#AAB8C2" />
-                                                                <circle id="main-circ" fill="#E2264D" opacity="0"
-                                                                    cx="29.5" cy="29.5" r="1.5" />
-
-                                                                <g id="grp7" opacity="0" transform="translate(7 6)">
-                                                                    <circle id="oval1" fill="#9CD8C3" cx="2" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#8CE8C3" cx="5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp6" opacity="0" transform="translate(0 28)">
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="3" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp3" opacity="0" transform="translate(52 28)">
-                                                                    <circle id="oval2" fill="#9CD8C3" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#8CE8C3" cx="4" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp2" opacity="0" transform="translate(44 6)">
-                                                                    <circle id="oval2" fill="#CC8EF5" cx="5" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp5" opacity="0" transform="translate(14 50)">
-                                                                    <circle id="oval1" fill="#91D2FA" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp4" opacity="0" transform="translate(35 50)">
-                                                                    <circle id="oval1" fill="#F48EA7" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#F48EA7" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp1" opacity="0" transform="translate(24)">
-                                                                    <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </label>
-                                                </div>
-
-                                            <div>
-                                                <input type="checkbox" id="likeButton1" class="toggleButton fillBlack bookmark" />
-                                                <label for="likeButton1">
-                                                    <svg style="padding: 4px;" id="heart-svg" viewBox="467 392 58 57"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g id="Group" fill="none" fill-rule="evenodd"
-                                                            transform="translate(467 392)">
-                                                            <path
-                                                                d="M34 6H14c-2.21 0-3.98 1.79-3.98 4L10 42l14-6 14 6V10c0-2.21-1.79-4-4-4z"
-                                                                id="heart" fill="#AAB8C2" />
-                                                            <circle id="main-circ" fill="#E2264D" opacity="0"
-                                                                cx="29.5" cy="29.5" r="1.5" />
-
-                                                            <g id="grp7" opacity="0" transform="translate(7 6)">
-                                                                <circle id="oval1" fill="#9CD8C3" cx="2" cy="6"
-                                                                    r="2" />
-                                                                <circle id="oval2" fill="#8CE8C3" cx="5" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="grp6" opacity="0" transform="translate(0 28)">
-                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="7"
-                                                                    r="2" />
-                                                                <circle id="oval2" fill="#91D2FA" cx="3" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="grp3" opacity="0" transform="translate(52 28)">
-                                                                <circle id="oval2" fill="#9CD8C3" cx="2" cy="7"
-                                                                    r="2" />
-                                                                <circle id="oval1" fill="#8CE8C3" cx="4" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="grp2" opacity="0" transform="translate(44 6)">
-                                                                <circle id="oval2" fill="#CC8EF5" cx="5" cy="6"
-                                                                    r="2" />
-                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="grp5" opacity="0" transform="translate(14 50)">
-                                                                <circle id="oval1" fill="#91D2FA" cx="6" cy="5"
-                                                                    r="2" />
-                                                                <circle id="oval2" fill="#91D2FA" cx="2" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="grp4" opacity="0" transform="translate(35 50)">
-                                                                <circle id="oval1" fill="#F48EA7" cx="6" cy="5"
-                                                                    r="2" />
-                                                                <circle id="oval2" fill="#F48EA7" cx="2" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="grp1" opacity="0" transform="translate(24)">
-                                                                <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3"
-                                                                    r="2" />
-                                                                <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2"
-                                                                    r="2" />
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        
-
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="postBox">
-                            <div class="post">
-                                <div class="header_post">
-                                    <img src="https://images.pexels.com/photos/2529973/pexels-photo-2529973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                        alt="">
-                                </div>
-
-                                <div class="body_post">
-                                    <div class="post_content">
-
-                                        <h1>Lorem Ipsum</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi
-                                            assumenda cumque deserunt
-                                            dolorum ex exercitationem.</p>
-
-                                        <div class="postBox_infos">
-                                            <div class="postedBy">
-                                                <span>author</span>
-                                                John Doe
-                                            </div>
-
-                                            <div class="postBox_tags">
-                                                <div>
-                                                    <input type="checkbox" id="checkbox" />
-                                                    <label for="checkbox">
-                                                        <svg id="heart-svg" viewBox="467 392 58 57"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <g id="Group" fill="none" fill-rule="evenodd"
-                                                                transform="translate(467 392)">
-                                                                <path
-                                                                    d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                                    id="heart" fill="#AAB8C2" />
-                                                                <circle id="main-circ" fill="#E2264D" opacity="0"
-                                                                    cx="29.5" cy="29.5" r="1.5" />
-
-                                                                <g id="grp7" opacity="0" transform="translate(7 6)">
-                                                                    <circle id="oval1" fill="#9CD8C3" cx="2" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#8CE8C3" cx="5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp6" opacity="0" transform="translate(0 28)">
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="3" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp3" opacity="0" transform="translate(52 28)">
-                                                                    <circle id="oval2" fill="#9CD8C3" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#8CE8C3" cx="4" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp2" opacity="0" transform="translate(44 6)">
-                                                                    <circle id="oval2" fill="#CC8EF5" cx="5" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp5" opacity="0" transform="translate(14 50)">
-                                                                    <circle id="oval1" fill="#91D2FA" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp4" opacity="0" transform="translate(35 50)">
-                                                                    <circle id="oval1" fill="#F48EA7" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#F48EA7" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp1" opacity="0" transform="translate(24)">
-                                                                    <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="postBox">
-                            <div class="post">
-                                <div class="header_post">
-                                    <img src="https://images.pexels.com/photos/2529973/pexels-photo-2529973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                        alt="">
-                                </div>
-
-                                <div class="body_post">
-                                    <div class="post_content">
-
-                                        <h1>Lorem Ipsum</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi
-                                            assumenda cumque deserunt
-                                            dolorum ex exercitationem.</p>
-
-                                        <div class="postBox_infos">
-                                            <div class="postedBy">
-                                                <span>author</span>
-                                                John Doe
-                                            </div>
-
-                                            <div class="postBox_tags">
-                                                <div>
-                                                    <input type="checkbox" id="checkbox" />
-                                                    <label for="checkbox">
-                                                        <svg id="heart-svg" viewBox="467 392 58 57"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <g id="Group" fill="none" fill-rule="evenodd"
-                                                                transform="translate(467 392)">
-                                                                <path
-                                                                    d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                                    id="heart" fill="#AAB8C2" />
-                                                                <circle id="main-circ" fill="#E2264D" opacity="0"
-                                                                    cx="29.5" cy="29.5" r="1.5" />
-
-                                                                <g id="grp7" opacity="0" transform="translate(7 6)">
-                                                                    <circle id="oval1" fill="#9CD8C3" cx="2" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#8CE8C3" cx="5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp6" opacity="0" transform="translate(0 28)">
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="3" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp3" opacity="0" transform="translate(52 28)">
-                                                                    <circle id="oval2" fill="#9CD8C3" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#8CE8C3" cx="4" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp2" opacity="0" transform="translate(44 6)">
-                                                                    <circle id="oval2" fill="#CC8EF5" cx="5" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp5" opacity="0" transform="translate(14 50)">
-                                                                    <circle id="oval1" fill="#91D2FA" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp4" opacity="0" transform="translate(35 50)">
-                                                                    <circle id="oval1" fill="#F48EA7" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#F48EA7" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp1" opacity="0" transform="translate(24)">
-                                                                    <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="containerAllPostCards" style="margin-top: 24px;" class="row">
 
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="postBox">
-                            <div class="post">
-                                <div class="header_post">
-                                    <img src="https://images.pexels.com/photos/2529973/pexels-photo-2529973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                        alt="">
-                                </div>
 
-                                <div class="body_post">
-                                    <div class="post_content">
-
-                                        <h1>Lorem Ipsum</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi
-                                            assumenda cumque deserunt
-                                            dolorum ex exercitationem.</p>
-
-                                        <div class="postBox_infos">
-                                            <div class="postedBy">
-                                                <span>author</span>
-                                                John Doe
-                                            </div>
-
-                                            <div class="postBox_tags">
-                                                <div>
-                                                    <input type="checkbox" id="checkbox" />
-                                                    <label for="checkbox">
-                                                        <svg id="heart-svg" viewBox="467 392 58 57"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <g id="Group" fill="none" fill-rule="evenodd"
-                                                                transform="translate(467 392)">
-                                                                <path
-                                                                    d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                                    id="heart" fill="#AAB8C2" />
-                                                                <circle id="main-circ" fill="#E2264D" opacity="0"
-                                                                    cx="29.5" cy="29.5" r="1.5" />
-
-                                                                <g id="grp7" opacity="0" transform="translate(7 6)">
-                                                                    <circle id="oval1" fill="#9CD8C3" cx="2" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#8CE8C3" cx="5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp6" opacity="0" transform="translate(0 28)">
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="3" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp3" opacity="0" transform="translate(52 28)">
-                                                                    <circle id="oval2" fill="#9CD8C3" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#8CE8C3" cx="4" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp2" opacity="0" transform="translate(44 6)">
-                                                                    <circle id="oval2" fill="#CC8EF5" cx="5" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp5" opacity="0" transform="translate(14 50)">
-                                                                    <circle id="oval1" fill="#91D2FA" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp4" opacity="0" transform="translate(35 50)">
-                                                                    <circle id="oval1" fill="#F48EA7" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#F48EA7" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp1" opacity="0" transform="translate(24)">
-                                                                    <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="postBox">
-                            <div class="post">
-                                <div class="header_post">
-                                    <img src="https://images.pexels.com/photos/2529973/pexels-photo-2529973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                        alt="">
-                                </div>
-
-                                <div class="body_post">
-                                    <div class="post_content">
-
-                                        <h1>Lorem Ipsum</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi
-                                            assumenda cumque deserunt
-                                            dolorum ex exercitationem.</p>
-
-                                        <div class="postBox_infos">
-                                            <div class="postedBy">
-                                                <span>author</span>
-                                                John Doe
-                                            </div>
-
-                                            <div class="postBox_tags">
-                                                <div>
-                                                    <input type="checkbox" id="checkbox" />
-                                                    <label for="checkbox">
-                                                        <svg id="heart-svg" viewBox="467 392 58 57"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <g id="Group" fill="none" fill-rule="evenodd"
-                                                                transform="translate(467 392)">
-                                                                <path
-                                                                    d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                                    id="heart" fill="#AAB8C2" />
-                                                                <circle id="main-circ" fill="#E2264D" opacity="0"
-                                                                    cx="29.5" cy="29.5" r="1.5" />
-
-                                                                <g id="grp7" opacity="0" transform="translate(7 6)">
-                                                                    <circle id="oval1" fill="#9CD8C3" cx="2" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#8CE8C3" cx="5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp6" opacity="0" transform="translate(0 28)">
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="3" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp3" opacity="0" transform="translate(52 28)">
-                                                                    <circle id="oval2" fill="#9CD8C3" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#8CE8C3" cx="4" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp2" opacity="0" transform="translate(44 6)">
-                                                                    <circle id="oval2" fill="#CC8EF5" cx="5" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp5" opacity="0" transform="translate(14 50)">
-                                                                    <circle id="oval1" fill="#91D2FA" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp4" opacity="0" transform="translate(35 50)">
-                                                                    <circle id="oval1" fill="#F48EA7" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#F48EA7" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp1" opacity="0" transform="translate(24)">
-                                                                    <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="postBox">
-                            <div class="post">
-                                <div class="header_post">
-                                    <img src="https://images.pexels.com/photos/2529973/pexels-photo-2529973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                        alt="">
-                                </div>
-
-                                <div class="body_post">
-                                    <div class="post_content">
-
-                                        <h1>Lorem Ipsum</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi
-                                            assumenda cumque deserunt
-                                            dolorum ex exercitationem.</p>
-
-                                        <div class="postBox_infos">
-                                            <div class="postedBy">
-                                                <span>author</span>
-                                                John Doe
-                                            </div>
-
-                                            <div class="postBox_tags">
-                                                <div>
-                                                    <input type="checkbox" id="checkbox" />
-                                                    <label for="checkbox">
-                                                        <svg id="heart-svg" viewBox="467 392 58 57"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <g id="Group" fill="none" fill-rule="evenodd"
-                                                                transform="translate(467 392)">
-                                                                <path
-                                                                    d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                                    id="heart" fill="#AAB8C2" />
-                                                                <circle id="main-circ" fill="#E2264D" opacity="0"
-                                                                    cx="29.5" cy="29.5" r="1.5" />
-
-                                                                <g id="grp7" opacity="0" transform="translate(7 6)">
-                                                                    <circle id="oval1" fill="#9CD8C3" cx="2" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#8CE8C3" cx="5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp6" opacity="0" transform="translate(0 28)">
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="3" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp3" opacity="0" transform="translate(52 28)">
-                                                                    <circle id="oval2" fill="#9CD8C3" cx="2" cy="7"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#8CE8C3" cx="4" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp2" opacity="0" transform="translate(44 6)">
-                                                                    <circle id="oval2" fill="#CC8EF5" cx="5" cy="6"
-                                                                        r="2" />
-                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp5" opacity="0" transform="translate(14 50)">
-                                                                    <circle id="oval1" fill="#91D2FA" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#91D2FA" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp4" opacity="0" transform="translate(35 50)">
-                                                                    <circle id="oval1" fill="#F48EA7" cx="6" cy="5"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#F48EA7" cx="2" cy="2"
-                                                                        r="2" />
-                                                                </g>
-
-                                                                <g id="grp1" opacity="0" transform="translate(24)">
-                                                                    <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3"
-                                                                        r="2" />
-                                                                    <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2"
-                                                                        r="2" />
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
 
             </div>
         </section>
+
+        <nav class="containerFab">
+            <a id="fabCreateNewPost" class="buttons" tooltip="Criar novo projeto" href="#"></a>
+        </nav>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <form id="contact">
+                        <p style="margin: 15px 0 0; font-size: 12px; display: none; color: red;" id="warningMessage">*
+                        </p>
+                        <div class="row">
+                            <div class="col-8">
+                                <h3>Criar novo projeto</h3>
+                                <h4>Preencha os campos</h4>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input placeholder="Titulo do projeto" id="title" name="title" type="text" tabindex="1"
+                                required autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Capa do projeto</label>
+                            <input id="imgInput" type="text" placeholder="image URL" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div>
+                                <img style="display: none;" id="previewImg" src="..." alt="..." width="150px"
+                                    height="150px">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Privacidade do projeto</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Publico
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Privado
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="description" name="description" placeholder="Descrição do projeto"
+                                tabindex="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button name="submit" type="submit" id="contact-submit"
+                                data-submit="...Sending">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalCentralizado">Aviso</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Antes de cadastrar um projeto é necessario realizar o login.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button id="goToLoginBtn" type="button" class="btn btn-primary">Ir para login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </main>
@@ -1337,7 +776,7 @@
 
     <section>
         <div class="pagination-wrapper">
-            <div class="pagination">
+            <div style="display: none;" id="pagination" class="pagination">
                 <a class="prev page-numbers" href="javascript:;">prev</a>
                 <span aria-current="page" class="page-numbers current">1</span>
                 <a class="page-numbers" href="javascript:;">2</a>
@@ -1355,6 +794,19 @@
 
 
     </section>
+
+
+    <!-- Footer -->
+<div class="page-footer font-small blue pt-4">  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> Gabriel Borges Diorato</a>
+    </div>
+    <!-- Copyright -->
+  
+  </div>
+  <!-- Footer -->
+
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -1376,14 +828,16 @@
     <script>
         // When the user scrolls down 20px from the top of the document, slide down the navbar
         window.onscroll = function () { scrollFunction() };
-        function scrollFunction() {       
-             $('#navBar').addClass("navbar navbar-expand-lg navbar-dark fixed-top bg-dark");
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("navBar").style.top = "0";
-                } else {
-                    document.getElementById("navBar").style.top = "-60px";
-                }
-            
+
+        function scrollFunction() {
+
+            $('#navBar').addClass("navbar navbar-expand-lg navbar-dark fixed-top bg-dark");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navBar").style.top = "0";
+            } else {
+                document.getElementById("navBar").style.top = "-60px";
+            }
+
         }
     </script>
 
@@ -1404,14 +858,13 @@
                 $('.overlay').addClass('active');
                 $('.collapse.in').toggleClass('in');
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                document.getElementById("navBar").style.top="-60px";
+                document.getElementById("navBar").style.top = "-60px";
             });
-
-        
-                
-            
         });
     </script>
+
+    <!--Page script-->
+    <script src="./js/destaques.js"></script>
 
 </body>
 
